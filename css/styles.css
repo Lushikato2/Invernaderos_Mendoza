@@ -46,12 +46,8 @@ nav ul li a:hover {
 }
 
 .imagen {
-    margin-bottom: 40px;
-}
-
-.imagen img {
+    margin-bottom: 20px;
     width: 100%;
-    max-width: 400px;
     height: auto;
 }
 
@@ -105,7 +101,20 @@ footer {
     padding: 20px 0;
 }
 
-/* Nuevos estilos agregados */
+footer p {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
 .about {
     display: flex;
     justify-content: center;
@@ -131,13 +140,26 @@ footer {
 
 .card-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Centra las cartas horizontalmente */
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
+/* Estilos para la grilla */
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Define 4 columnas de igual ancho */
+    gap: 10px;
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Estilos para centrar las cartas horizontalmente */
+.centrado-derecha {
+    justify-content: flex-end; /* Alinea las cartas hacia la derecha */
+}
+
 .card {
-    width: 30%;
+    width: calc(25% - 20px); /* Calcula el ancho para 4 cartas por fila */
     margin: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 20px;
@@ -145,9 +167,9 @@ footer {
 }
 
 .card img {
-    width: 100%;
+    width: 100%; /* Ajusta el ancho de la imagen */
     height: auto;
-    max-height: 200px;
+    max-height: 800px; /* Establece la altura máxima */
 }
 
 .card h3 {
@@ -156,7 +178,7 @@ footer {
 
 .card p {
     color: #666;
-    font-size: 14px;
+    font-size: 16px; /* Aumenta el tamaño del texto */
     margin: 10px 0;
 }
 
@@ -172,4 +194,25 @@ footer {
 
 .card a:hover {
     background-color: #5c8c00;
+}
+
+/* Estilos específicos para la página de Acerca de Nosotros */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.about-section img {
+    width: 50%; /* Ajusta el ancho de la imagen */
+    max-width: 400px; /* Establece el ancho máximo */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+}
+
+.about-section p {
+    width: 50%; /* Ajusta el ancho del texto */
+    font-size: 18px; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
 }
