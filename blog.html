@@ -1,60 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Invernaderos Mendoza</title>
     <link rel="stylesheet" href="css/styles.css">
-  <style>
-    body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-}
-
-
-.container {
+ <style>.container-2 {
     display: grid;
-    grid-template-columns: repeat(2, 310px);
-    grid-template-rows: repeat(2, 302px);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     justify-items: center;
-    align-items: center; /* Centrar verticalmente */
     padding: 20px;
-    margin-bottom: auto; /* Empuje hacia arriba el footer */
 }
 
-.imagen {
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imagen-2 {
     width: 100%;
-    height: 100%;
+    height: auto;
     max-width: 310px;
-    max-height: 302px;
-    object-fit: cover;
-    border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
 }
 
-footer {
-    margin-top: auto; /* Footer en la parte inferior */
-    padding: 20px;
-    background-color: #333;
-    text-align: center;
-    width: 100%;
+.card figcaption {
+    margin-top: 10px;
 }
-
-.social-links {
-    display: flex;
-    justify-content: center;
-}
-
-.social-links a {
-    margin: 0 10px; /* Espacio entre los iconos de redes sociales */
-}
-
-  </style>
+</style>
 </head>
 <body>
     <header>
@@ -68,6 +45,7 @@ footer {
                     <li><a href="acerca_de_nosotros.html">Acerca De Nosotros</a></li>
                     <li><a href="contacto.html">Contactanos</a></li>
                     <li><a href="blog.html">Blog</a></li>
+                    <li><a href="preguntas_frecuentes.html">Preguntas Frecuentes(FAQ)</a></li>
                 </ul>
             </nav>
             <h1>Blog</h1>
@@ -75,11 +53,24 @@ footer {
     </header>
 
     <div class="container-2">
-        <img class="imagen-2" src="/imagenes/casas de malla.jpg" alt="Imagen 1">
-        <img class="imagen-2" src="imagenes/Galeria1.jpg" alt="Imagen 2">
-        <img class="imagen-2" src="imagenes/invernadero platulas.jpg" alt="Imagen 3">
-        <img class="imagen-2" src="imagenes/climatizacion.jpg" alt="Imagen 4">
+        <figure class="card">
+            <img class="imagen-2" src="/imagenes/casas de malla.jpg" alt="Imagen 1">
+            <figcaption>Cuida tus plantas proporcionándoles la cantidad adecuada de agua y luz.</figcaption>
+        </figure>
+        <figure class="card">
+            <img class="imagen-2" src="imagenes/Galeria1.jpg" alt="Imagen 2">
+            <figcaption>Recuerda podar regularmente tus plantas para mantenerlas saludables y con buen aspecto.</figcaption>
+        </figure>
+        <figure class="card">
+            <img class="imagen-2" src="imagenes/invernadero platulas.jpg" alt="Imagen 3">
+            <figcaption>Utiliza fertilizantes orgánicos para nutrir tus plantas y cuidar el medio ambiente.</figcaption>
+        </figure>
+        <figure class="card">
+            <img class="imagen-2" src="imagenes/climatizacion.jpg" alt="Imagen 4">
+            <figcaption>Protege tus plantas de cambios bruscos de temperatura y corrientes de aire.</figcaption>
+        </figure>
     </div>
+    
 
     <footer>
         <p>Conéctate con nosotros:</p>
