@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería - Invernaderos Mendoza</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .card img {
+    width: 310px; /* Ancho fijo de 300px */
+    height: 302px; /* Alto fijo de 300px */
+    object-fit: cover;
+        }
+
+        .card  {
+    width: 320px;
+    height: 320px; 
+    object-fit: cover;
+    margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,23 +38,43 @@
         </div>
     </header>
 
-    <main>
-        <section id="galeria" class="galeria">
-            <!-- Contenido de la galería -->
-            <div class="imagen">
-                <img src="imagen1.jpg" alt="Invernadero">
-                <p>Descripción de la imagen 1</p>
-            </div>
-            <div class="imagen">
-                <img src="imagen2.jpg" alt="Plantulas">
-                <p>Descripción de la imagen 2</p>
-            </div>
-            <!-- Añade más imágenes y descripciones según sea necesario -->
-        </section>
-    </main>
+    <div class="grid-container">
+        <div class="card">
+            <img src="imagenes/Galeria1.jpg" alt="Imagen 1">
+            <div class="comment">Plantula Raiz </div>
+        </div>
+        <div class="card">
+            <img src="imagenes/galeria2.jpg" alt="Imagen 2">
+            <div class="comment">Plantula Apio </div>
+        </div>
+        <div class="card">
+            <img src="imagenes/galeria3.jpg" alt="Imagen 3">
+            <div class="comment">Plantula Repollo </div>
+        </div>
+        <div class="card">
+            <img src="imagenes/galeria4.jpg" alt="Imagen 4">
+            <div class="comment">Plantula Arbol</div>
+        </div>
+        <div class="card">
+            <img src="imagenes/galeria5.jpg" alt="Imagen 5">
+            <div class="comment">Plantula Perejil</div>
+        </div>
+        <div class="card">
+            <img src="imagenes/galeria6.jpg" alt="Imagen 6">
+            <div class="comment">Plantula Lechuga</div>
+        </div>
+    </div>
+ 
 
     <footer>
-        <!-- Contenido del footer -->
+        <p>Conéctate con nosotros:</p>
+        <div class="social-links">
+            <a href="https://facebook.com/invernaderosmendoza" target="_blank"><img src="imagenes/facebook_logo_icon_147291.ico" alt="Facebook"></a>
+            <a href="https://twitter.com/invernaderosmendoza" target="_blank"><img src="imagenes/twitter_x_new_logo_x_rounded_icon_256078.ico" alt="Twitter"></a>
+            <a href="https://instagram.com/invernaderosmendoza" target="_blank"><img src="imagenes/Instagram_icon-icons.com_66804.ico" alt="Instagram"></a>
+            <a href="https://wa.me/50495555859" target="_blank"> <img src="imagenes/Whatsapp_icon-icons.com_66931.ico" alt="WhatsApp">
+            </a>
+        </div>
     </footer>
 </body>
 </html>

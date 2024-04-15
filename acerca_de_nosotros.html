@@ -6,9 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca De Nosotros - Invernaderos Mendoza</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 310px);
+        grid-template-rows: repeat(2, 302px);
+        grid-gap: 20px;
+        justify-items: center;
+        align-items: center; /* Centrar verticalmente */
+        padding: 20px;
+        margin-bottom: auto; /* Empuje hacia arriba el footer */
+    }
+    
+    .imagen {
+        width: 100%;
+        height: 100%;
+        max-width: 310px;
+        max-height: 302px;
+        object-fit: cover;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    footer {
+        margin-top: auto; /* Footer en la parte inferior */
+        padding: 20px;
+        background-color: #333;
+        text-align: center;
+    }
+    
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social-links a {
+        margin: 0 10px; /* Espacio entre los iconos de redes sociales */
+    }
+    
+      </style>
 
 </head>
-
 <body>
     <header>
         <div class="hero">
@@ -28,7 +74,7 @@
     </header>
 
     <div class="about-section">
-        <img src="ruta_de_la_imagen.jpg" alt="Imagen de la empresa">
+        <img src="imagenes/invernadero.jpg" alt="Imagen de la empresa">
         <p>En Invernaderos Mendoza, estamos comprometidos con el desarrollo sostenible y la producción agrícola de calidad. Desde nuestros inicios, hemos trabajado para ofrecer soluciones innovadoras que no solo aumenten la productividad y rentabilidad de los cultivos, sino que también preserven y respeten el medio ambiente. Con una historia arraigada en la integridad, la innovación y la sostenibilidad, nos esforzamos por ser líderes en la industria agrícola y contribuir al bienestar de nuestra comunidad.</p>
     </div>
     <footer>
